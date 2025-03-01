@@ -13,5 +13,11 @@
 # Dependency directories
 vendor/
 
+# Log files
+*.log
+
+# Credentials
+credentials.json
+
 # Go workspace file
 go.work

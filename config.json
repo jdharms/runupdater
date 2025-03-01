@@ -1,0 +1,10 @@
+{
+    "LiveSplitExportPath": "D:\\Documents\\Speedrunning\\splitshots\\nmg.xlsx",
+    "FileCheckInterval": 5000000000,
+    "GoogleSheetsCredentialsPath": "credentials.json",
+    "GoogleSheetID": "18mEgNFdcjLa-iebXkIM1sq_36-PQdrVTlJL1ta6nX6g",
+    "RawDataSheet1Name": "Attempt History (Real Time)",
+    "RawDataSheet2Name": "Segment History (Real Time)",
+    "LogPath": "runupdater.log",
+    "LogLevel": "info"
+  }
