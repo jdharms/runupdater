@@ -38,6 +38,8 @@ RunUpdater is a Windows service that automatically syncs LiveSplit export data t
    sc start RunUpdater
    ```
 
+   **Note:** If you are running this as a service, all paths should be **absolute paths**.
+
 ## Configuration
 
 Create a `config.json` file with the following structure:
@@ -48,19 +50,19 @@ Create a `config.json` file with the following structure:
   "FileCheckInterval": 5000000000,
   "GoogleSheetsCredentialsPath": "credentials.json",
   "GoogleSheetID": "your-google-sheet-id-here",
-  "RawDataSheet1Name": "Raw Data",
-  "RawDataSheet2Name": "Segment History",
+  "RawDataSheet1Name": "Attempt History (Real Time)",
+  "RawDataSheet2Name": "Segment History (Real Time)",
   "LogPath": "runupdater.log",
   "LogLevel": "info"
 }
 ```
 
+**Note:** If you are running this as a service, all paths should be **absolute paths**.
+
 Notes:
 - `FileCheckInterval` is in nanoseconds (5000000000 = 5 seconds)
 - `GoogleSheetID` is the ID in the Google Sheets URL (the long string after `/d/` and before `/edit`)
 - `GoogleSheetsCredentialsPath` should point to your Google Sheets API credentials JSON file (see below)
-
-Here's an updated version of the "Google Sheets API Setup" section for your README.md that includes the detailed instructions about setting up a service account:
 
 ## Google Sheets API Setup
 
